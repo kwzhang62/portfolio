@@ -1,0 +1,14 @@
+header {
+    color: $primaryColour;
+    background-color: $secondaryColour;
+}
+
+.navbar {
+    ul {
+        display: flex;
+        padding-left: 50%;
+        a {
+            color: $primaryColour;
+        }
+    }
+}
