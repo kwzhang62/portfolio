@@ -15,10 +15,12 @@ section {
     padding-top: 100px;
     padding-bottom: 200px; 
     h3 {
-        margin-bottom: 50px;
+        margin-bottom: 100px;
     }
     .projectContainer {
         margin-bottom: 100px;
+        padding: 25px;
+        border-radius: 15px;
         display: flex;
         .imageContainer {
             width: 50%;
@@ -42,5 +44,11 @@ section {
                 margin-right: 25px;
             }
         }
+        &:hover,
+        &:focus {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px $primaryColour;
+        }
+        transition: all 0.2s;
     }
 }

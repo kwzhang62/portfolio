@@ -395,13 +395,17 @@ section {
   padding-bottom: 200px;
 }
 #projects h3 {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 #projects .projectContainer {
   margin-bottom: 100px;
+  padding: 25px;
+  border-radius: 15px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
 }
 #projects .projectContainer .imageContainer {
   width: 50%;
@@ -424,4 +428,10 @@ section {
 }
 #projects .projectContainer .linksContainer a:nth-child(1) {
   margin-right: 25px;
+}
+#projects .projectContainer:hover, #projects .projectContainer:focus {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  -webkit-box-shadow: 0 0 20px white;
+          box-shadow: 0 0 20px white;
 }
