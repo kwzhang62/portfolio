@@ -20,4 +20,27 @@ ul {
 
 a {
     text-decoration: none;
+    color: $primaryColour;
+    position: relative;
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        width: 100%;
+        height: 3px;
+        bottom: -4px;
+        left: 0;
+        background-color: $secondaryColour;
+    }
+    &:hover::after,
+    &:focus::after {
+        background-color: $primaryColour;
+        animation: linkHoverEffect 1s step-end infinite;
+    }
+}
+
+@keyframes linkHoverEffect {
+    50% {
+        background-color: $secondaryColour;
+    }
 }
