@@ -260,7 +260,7 @@ template {
   font-weight: normal;
 }
 @font-face {
-  font-family: "Inconsolata";
+  font-family: "Montserrat";
   src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
   font-weight: bold;
 }
@@ -357,6 +357,83 @@ a:hover::after, a:focus::after {
     background-color: #121212;
   }
 }
+.contactForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.contactForm input, .contactForm textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 5px 0 10px 5px;
+  color: #121212;
+  font-family: "Montserrat";
+}
+.contactForm input::-webkit-input-placeholder, .contactForm textarea::-webkit-input-placeholder {
+  color: #121212;
+  font-size: 1rem;
+  opacity: 1;
+  line-height: 1.2rem;
+}
+.contactForm input::-moz-placeholder, .contactForm textarea::-moz-placeholder {
+  color: #121212;
+  font-size: 1rem;
+  opacity: 1;
+  line-height: 1.2rem;
+}
+.contactForm input:-ms-input-placeholder, .contactForm textarea:-ms-input-placeholder {
+  color: #121212;
+  font-size: 1rem;
+  opacity: 1;
+  line-height: 1.2rem;
+}
+.contactForm input::-ms-input-placeholder, .contactForm textarea::-ms-input-placeholder {
+  color: #121212;
+  font-size: 1rem;
+  opacity: 1;
+  line-height: 1.2rem;
+}
+.contactForm input::placeholder, .contactForm textarea::placeholder {
+  color: #121212;
+  font-size: 1rem;
+  opacity: 1;
+  line-height: 1.2rem;
+}
+.contactForm input:focus, .contactForm textarea:focus {
+  outline: none;
+  border: none;
+  -webkit-box-shadow: 0 0 10px white;
+          box-shadow: 0 0 10px white;
+}
+.contactForm input {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactForm textarea {
+  height: 150px;
+  margin-bottom: 30px;
+}
+
+.submitButton {
+  min-height: 50px;
+  background-color: white;
+  border: 2px solid #121212;
+  border-radius: 5px;
+  text-transform: uppercase;
+  font-family: "Inconsolata";
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.submitButton:hover, .submitButton:focus {
+  color: white;
+  background-color: #121212;
+  border: 2px solid white;
+}
+
 header {
   min-height: 100vh;
 }

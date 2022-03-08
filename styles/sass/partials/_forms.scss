@@ -1,0 +1,47 @@
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    input, textarea {
+        border: none;
+        border-radius: 5px;
+        padding: 5px 0 10px 5px;
+        color: $secondaryColour;
+        font-family: $bodyFont;
+        &::placeholder {
+            color: $secondaryColour;
+            font-size: 1rem;
+            opacity: 1;
+            line-height: 1.2rem;
+        }
+        &:focus {
+            outline: none;
+            border: none;
+            box-shadow: 0 0 10px $primaryColour;
+        }
+    }
+    input {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    textarea {
+        height: 150px;
+        margin-bottom: 30px;
+    }
+}
+
+.submitButton {
+    min-height: 50px;
+    background-color: $primaryColour;
+    border: 2px solid $secondaryColour;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: $headerFont;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color: $primaryColour;
+        background-color: $secondaryColour;
+        border: 2px solid $primaryColour;
+    }
+}
