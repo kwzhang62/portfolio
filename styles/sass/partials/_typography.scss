@@ -57,7 +57,11 @@ a {
 
 p {
     font-size: 1.4rem;
+    &.skill {
+        // font-size: 1rem;
+    }
 }
+
 span {
     text-transform: capitalize;
 }
