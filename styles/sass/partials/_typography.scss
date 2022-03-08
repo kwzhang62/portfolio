@@ -29,7 +29,7 @@ html {
     color: $primaryColour;
 }
 
-h1, h3 {
+h1, h3, footer {
     font-family: $headerFont, monospace;
     font-weight: normal;
     // line-height: normal;
@@ -64,4 +64,8 @@ p {
 
 span {
     text-transform: capitalize;
+}
+
+.smallCopy {
+    font-size: 0.8rem;    
 }

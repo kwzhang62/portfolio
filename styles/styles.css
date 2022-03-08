@@ -271,7 +271,7 @@ html {
   color: white;
 }
 
-h1, h3 {
+h1, h3, footer {
   font-family: "Inconsolata", monospace;
   font-weight: normal;
 }
@@ -299,6 +299,10 @@ p {
 }
 span {
   text-transform: capitalize;
+}
+
+.smallCopy {
+  font-size: 0.8rem;
 }
 
 * {
@@ -466,4 +470,46 @@ section {
 #skills ul li:hover, #skills ul li:focus {
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+}
+
+#contact {
+  padding-top: 50px;
+  padding-bottom: 100px;
+  height: 40vh;
+  min-height: 400px;
+}
+#contact .contactContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+#contact .contactContainer .contactText,
+#contact .contactContainer .contactFormContainer {
+  width: 50%;
+}
+#contact .contactContainer .socialLinks {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-right: 60%;
+  margin-top: 30px;
+}
+#contact .contactContainer .socialLinks li {
+  margin-right: 30px;
+}
+#contact .contactContainer .socialLinks i {
+  font-size: 2rem;
+}
+#contact .contactContainer h4,
+#contact .contactContainer p {
+  padding-right: 20%;
+  margin-bottom: 20px;
+}
+#contact .contactContainer h4 a,
+#contact .contactContainer p a {
+  font-weight: bold;
+}
+
+footer p {
+  text-align: center;
 }
