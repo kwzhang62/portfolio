@@ -40,6 +40,24 @@ a {
     }
 }
 
+.defaultButton {
+    min-height: 50px;
+    padding: 5px 15px;
+    background-color: $primaryColour;
+    border: 2px solid $secondaryColour;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: $headerFont;
+    font-size: 1.5rem;
+    cursor: pointer;
+    &:hover,
+    &:focus {
+        color: $primaryColour;
+        background-color: $secondaryColour;
+        border: 2px solid $primaryColour;
+    }
+}
+
 @keyframes linkHoverEffect {
     50% {
         background-color: $secondaryColour;

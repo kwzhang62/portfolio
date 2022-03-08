@@ -28,20 +28,3 @@
         margin-bottom: 30px;
     }
 }
-
-.submitButton {
-    min-height: 50px;
-    background-color: $primaryColour;
-    border: 2px solid $secondaryColour;
-    border-radius: 5px;
-    text-transform: uppercase;
-    font-family: $headerFont;
-    font-size: 1.5rem;
-    cursor: pointer;
-    &:hover,
-    &:focus {
-        color: $primaryColour;
-        background-color: $secondaryColour;
-        border: 2px solid $primaryColour;
-    }
-}
