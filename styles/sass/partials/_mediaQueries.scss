@@ -1,0 +1,148 @@
+@media (max-width: 1600px) {
+    .wrapper {
+        width: 90%;
+    }
+    #projects {
+        .projectContainer {
+            .imageContainer {
+                padding-right: 0;
+                img {
+                    height: auto;
+                    max-width: 100%;
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width: 1200px) {
+    a, p {
+        font-size: 1rem;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+}
+
+@media (max-width: 1000px) {
+    .navbar {
+        ul {
+            padding-left: 0;
+            justify-content: space-between;
+        }
+    }
+    #projects {
+        .projectContainer {
+            flex-direction: column;
+            .imageContainer,
+            .textContainer {
+                width: 100%;
+            }
+            .imageContainer {
+                margin-bottom: 20px;
+            }
+        }
+    }
+    #contact {
+        height: 700px;
+        .contactContainer {
+            flex-direction: column;
+            .contactText,
+            .contactFormContainer {
+                width: 100%;
+                margin-bottom: 20px;
+            }
+        }
+        .socialLinks {
+            i {
+                font-size: 1.4rem;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px) {
+    #skills {
+        ul {
+            li {
+                width: 25%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    #skills {
+        ul {
+            li {
+                width: 33%;
+            }
+        }
+    }
+    #contact {
+        height: 800px;
+    }
+}
+
+@media (max-width: 500px) {
+    //TODO: make the navbar into a hamburger menu/slide out menu instead
+    .navbar {
+        ul {
+            flex-direction: column;
+            padding-left: 80%;
+            li {
+                text-align: right;
+            }
+        }
+    }
+    header {
+        .intro {
+            margin-top: 20%;
+            padding-left: 5%;
+        }
+    }
+    h1 {
+        font-size: 3rem;
+    }
+    h3 {
+        font-size: 1.5rem;
+    }
+    h4 {
+        font-size: 1.15rem;
+    }
+    section {
+        padding: 0 5%;
+    }
+    #about,
+    #projects,
+    #skills,
+    #contact {
+        padding-top: 20px
+    }
+    #projects {
+        padding-bottom: 20px;
+        h3 {
+            margin-bottom: 20px;
+        }
+    }
+    #skills {
+        padding-top: 20px;
+        .skillsContainer {
+            padding-top: 20px;
+        }
+        ul {
+            li {
+                width: 50%;
+            }
+        }
+    }
+}
+
+@media (max-width: 450px) {
+    .navbar {
+        ul {
+            padding-left: 70%;
+        }
+    }
+}
