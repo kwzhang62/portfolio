@@ -1,7 +1,46 @@
-#about {
+section {
     min-height: 100vh;
-    padding: 30% 15% 0 15%;
+    padding: 0 15%;
+}
+
+#about {
+    // padding: 30% 15% 0 15%;
+    padding-top: 30%;
     h3 {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
+    }
+}
+
+#projects {
+    padding-top: 100px;
+    padding-bottom: 200px; 
+    h3 {
+        margin-bottom: 50px;
+    }
+    .projectContainer {
+        margin-bottom: 100px;
+        display: flex;
+        .imageContainer {
+            width: 50%;
+            padding-right: 50px;
+            img {
+                height: 100%;
+            }
+        }
+        .textContainer {
+            width: 50%;
+            h4 {
+                margin-bottom: 20px;
+            }
+            a {
+                color: $primaryColour;
+            }
+        }
+        .linksContainer {
+            margin-top: 20px;
+            a:nth-child(1) {
+                margin-right: 25px;
+            }
+        }
     }
 }
