@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+html {
+    background-color: $secondaryColour;
+}
+
 .wrapper {
     max-width: 1920px;
     width: 80%;

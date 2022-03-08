@@ -7,16 +7,49 @@
 @font-face {
     font-family: 'Inconsolata';
     src: url("../fonts/Inconsolata/Inconsolata-SemiBold.ttf");
-    font-weight: 600;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url("../fonts/Montserrat/Montserrat-Regular.ttf");
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Inconsolata';
+    src: url("../fonts/Montserrat/Montserrat-SemiBold.ttf");
+    font-weight: bold;
 }
 
 html {
     font-size: 125%;
+    font-family: $bodyFont, sans-serif;
+    font-weight: normal;
+    color: $primaryColour;
+}
+
+h1, h3 {
+    font-family: $headerFont, monospace;
+    font-weight: normal;
+    // line-height: normal;
 }
 
 h1 {
-    font-family: $mainFont, monospace;
-    font-weight: 600;
+    // font-weight: normal;
+    font-size: 4rem;
+}
+
+h3 {
+    // font-weight: normal;
     font-size: 2.5rem;
-    line-height: normal;
+}
+
+a {
+    font-size: 1.5rem;
+    line-height: 1.75rem;
+}
+
+span {
+    text-transform: capitalize;
 }

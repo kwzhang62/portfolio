@@ -1,14 +1,35 @@
 header {
-    color: $primaryColour;
-    background-color: $secondaryColour;
+    // color: $primaryColour;
+    // background-color: $secondaryColour;
+    min-height: 100vh;
 }
 
 .navbar {
     ul {
         display: flex;
+        // justify-content: space-evenly;
         padding-left: 50%;
-        a {
-            color: $primaryColour;
+        padding-top: 50px;
+        li {
+            min-width: 20%;
+            text-align: center;
+            a {
+                color: $primaryColour;
+                transition: all 0.3s ease-out;
+                &:hover,
+                &:focus {
+                    font-size: 1.7rem;
+                    transition: all 0.3s ease-out;
+                }
+            }
         }
+    }
+}
+
+.intro {
+    margin-top: calc(50vh - 100px);
+    padding-left: 15%;
+    h1{
+        margin-bottom: 10px;
     }
 }
