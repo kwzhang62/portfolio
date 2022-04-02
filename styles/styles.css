@@ -494,13 +494,13 @@ section {
 }
 #projects .projectContainer .imageContainer {
   width: 50%;
-  padding-right: 50px;
 }
 #projects .projectContainer .imageContainer img {
-  height: 100%;
+  width: 90%;
 }
 #projects .projectContainer .textContainer {
   width: 50%;
+  padding-left: 5%;
 }
 #projects .projectContainer .textContainer h4 {
   margin-bottom: 20px;
