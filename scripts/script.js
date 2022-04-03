@@ -53,7 +53,7 @@ app.setSubmitListener = function() {
 };
 
 app.init = function() {
-    app.setSubmitListener();
+    // app.setSubmitListener();
     app.populateSkillsArray();
     app.setShuffleListener();
 };
