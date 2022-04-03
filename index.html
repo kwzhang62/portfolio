@@ -195,7 +195,7 @@
                         </ul>
                     </div>
                     <div class="contactFormContainer">
-                        <form action="#" class="contactForm">                            
+                        <form class="contactForm" method="POST" data-netlify="true">                            
                             <div class="formUserInfo">
                                 <label for="name" class="sr-only">Name</label>
                                 <input type="text" id="name" placeholder="Name">
@@ -207,7 +207,7 @@
                             <label for="message" class="sr-only">Message for me</label>
                             <textarea name="message" id="message" cols="30" rows="10" placeholder="the data gremlins eagerly await your message"></textarea>
         
-                            <button class="defaultButton" id="submit">Send</button>                        
+                            <button class="defaultButton" id="submit" type="submit">Send</button>                        
                         </form>
                     </div>
                 </div>
